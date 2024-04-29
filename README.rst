@@ -15,6 +15,15 @@ Features
 ============
 Instructions
 ============
+Building:
+
+```
+mkdir build
+cd build
+../configure --target-list=xtensa-softmmu --enable-gcrypt --enable-debug --disable-sanitizers --disable-strip --disable-user --disable-capstone --disable-vnc --disable-sdl --disable-gtk --disable-curl
+cd ..
+ninja -C build
+```
 
 After compiling with `ninja -C build`, run it with
 
