@@ -25,7 +25,7 @@ cd ..
 ninja -C build
 ```
 
-After compiling with `ninja -C build`, run it with
+After compiling with `ninja -C build`, build a `flash_image.bin` by `cd'ing` to the build directory of your ESP32 project, then running `esptool.py --chip esp32 merge_bin --fill-flash-size 4MB -o flash_image.bin @flash_args`
 
 ```
 build/qemu-system-xtensa -singlestep -d unimp -nic user,model=misc.esp32_wifi,id=u1 -no-reboot -S -s -nographic -machine esp32 -drive file=/home/user/Projects/esp32-open-mac/tx-example-esp32-plain/build/flash_image.bin,if=mtd,format=raw -object filter-dump,id=f1,file=/tmp/dump.pcap,netdev=u1 -drive file=../efuse/efuse.bin,if=none,format=raw,id=efuse -global driver=nvram.esp32.efuse,property=drive,value=efuse 2>&1
