@@ -1,3 +1,22 @@
+OpenSensor qemu-esp32
+=====================
+
+This is OpenSensor Engineering's independently maintained fork of
+`esp32-open-mac/qemu <https://github.com/esp32-open-mac/qemu>`_.
+The canonical repository is `opensensor/qemu-esp32 <https://github.com/opensensor/qemu-esp32>`_.
+
+**AI-assisted and AI-generated contributions are welcome.** See
+`CONTRIBUTING.md <CONTRIBUTING.md>`_ for review and validation expectations.
+Submit issues and pull requests to this OpenSensor repository.
+
+Related projects and integration status are listed in the
+`OpenSensor ESP repository index <https://github.com/opensensor/esp-wifi-hal/blob/main/FORKS.md>`_.
+This fork initially preserves upstream code; no new emulator validation is claimed.
+Original history, credits and licenses are retained.
+
+Upstream documentation
+----------------------
+
 This version of QEMU is modified to reverse engineer the ESP32 wifi registers.
 Was built on the latest espressif qemu release, with the patches from Ebiroll ported to that newer version
 
